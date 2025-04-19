@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
+app.use(cors()); // This will allow your frontend to connect to the backend
+
 app.get('/', (req, res) => {
   res.send('Hello from Backend!');
 });
