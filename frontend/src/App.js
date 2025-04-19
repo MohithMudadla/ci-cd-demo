@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/') // Replace later with Render URL
+    fetch('https://ci-cd-demo-mc0x.onrender.com/') // Replace later with Render URL
       .then(res => res.text())
       .then(data => setMessage(data));
   }, []);
